@@ -35,10 +35,10 @@ export default function ContactForm() {
 
     emailjs
       .send(
-        'service_dd91cs4', // substitua pelo seu Service ID
-        'template_7l1ejkm', // substitua pelo seu Template ID
+        'service_28y6n6n', // substitua pelo seu Service ID
+        'template_8y9a0ji', // substitua pelo seu Template ID
         templateParams,
-        'bL24tpiXsEQJ9YhAB' // substitua pela sua Public Key
+        'WGcMyXaRZoTHxrTPM' // substitua pela sua Public Key
       )
       .then(
         () => {
@@ -157,7 +157,7 @@ export default function ContactForm() {
               onClick={sendToEmail}
               disabled={isSubmitting}
             >
-              Enviar
+              <p>{isSubmitting ? 'Enviando...' : 'Enviar'}</p>
             </button>
           </form>
 
