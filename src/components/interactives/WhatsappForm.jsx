@@ -78,10 +78,10 @@ const WhatsappForm = () => {
 
     emailjs
       .send(
-        'service_gik4w8p', // substitua pelo seu Service ID
-        'template_o4kc0ak', // substitua pelo seu Template ID
+        'service_qtmlg15', // substitua pelo seu Service ID
+        'template_8y9a0ji', // substitua pelo seu Template ID
         templateParams,
-        '8bJXn-qPMOzTraXbd' // substitua pela sua Public Key
+        '8bJXn-WGcMyXaRZoTHxrTPM' // substitua pela sua Public Key
       )
       .then(
         () => {
