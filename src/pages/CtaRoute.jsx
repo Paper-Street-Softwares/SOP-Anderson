@@ -12,7 +12,12 @@ function CtaRoute({ colorMode }) {
         <NavbarNovaTemplate colorMode="dark" />
         <div className="h-24 tablet1:h-32 " />
         <CtaNovoTemplate colorMode="dark" />
-        <FooterNovoTemplate colorMode="dark" />
+        <FooterNovoTemplate
+          colorMode="dark"
+          expediente={true}
+          adress={true}
+          emailSecond={true}
+        />
       </ColorModeProvider>
     </div>
   )

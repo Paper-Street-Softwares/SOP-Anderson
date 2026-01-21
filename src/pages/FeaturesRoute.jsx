@@ -12,7 +12,12 @@ function FeaturesRoute({ colorMode }) {
         <NavbarNovaTemplate colorMode="dark" />
         <div className="h-24 tablet1:h-32 " />
         <FeaturesNovaTemplate colorMode="dark" />
-        <FooterNovoTemplate colorMode="dark" />
+        <FooterNovoTemplate
+          colorMode="dark"
+          expediente={true}
+          adress={true}
+          emailSecond={true}
+        />
       </ColorModeProvider>
     </div>
   )
