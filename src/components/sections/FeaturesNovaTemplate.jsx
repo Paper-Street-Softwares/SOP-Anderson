@@ -68,7 +68,7 @@ function FeaturesNovaTemplate({ colorMode }) {
     <SectionArea
       id="feature"
       data-theme={colorMode}
-      className={`${backgroundMode}`}
+      className={`${backgroundMode} scroll-m-0`}
     >
       <SectionWrapper>
         <section className="relative font-mainFont">

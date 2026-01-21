@@ -33,7 +33,7 @@ function CtaNovoTemplate({ colorMode }) {
   }
 
   return (
-    <SectionArea className={`relative z-0 ${backgroundMode}`}>
+    <SectionArea id="cta" className={`relative z-0 ${backgroundMode}`}>
       {/* Fundo decorativo */}
       <SectionWrapper className="">
         <section className="relative text-center">

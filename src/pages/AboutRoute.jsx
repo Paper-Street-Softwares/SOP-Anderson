@@ -3,6 +3,7 @@ import NavbarNovaTemplate from '../components/sections/NavbarNovaTemplate'
 import AboutNovoTemplate from '../components/sections/AboutNovoTemplate'
 import { ColorModeProvider } from '../context/UseContextArchive'
 import { useColorMode } from '../context/UseContextArchive'
+import FooterNovoTemplate from '../components/sections/FooterNovoTemplate'
 
 function AboutRoute({ colorMode }) {
   return (
@@ -11,6 +12,7 @@ function AboutRoute({ colorMode }) {
         <NavbarNovaTemplate colorMode="dark" />
         <div className="h-24 tablet1:h-32 " />
         <AboutNovoTemplate colorMode="dark" />
+        <FooterNovoTemplate colorMode="dark" />
       </ColorModeProvider>
     </div>
   )
