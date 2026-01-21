@@ -17,6 +17,7 @@ function NavbarNovaTemplate({
   hoverLinks,
   colorMenu,
   bgOpacitySidebar,
+  borderNone,
 }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -61,10 +62,10 @@ function NavbarNovaTemplate({
   return (
     <SectionWrapper>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${borderNone ? 'border-transparent' : 'bg-black border-primaryLight'} ${
           isScrolled
             ? `${backgrondMode} backdrop-blur-md py-2 shadow-sm border-shadowHero/10 h-auto`
-            : `${backgrondMode} border-border/40 py-3 phone2:h-auto`
+            : ` border-border/40 py-3 phone2:h-auto`
         }`}
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
