@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import SectionAria from '../../components/sectionElements/SectionArea'
 import SectionWrapper from '../../components/sectionElements/SectionWrapper'
 import content from '../../content/content'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { useContext } from 'react'
 
@@ -43,7 +43,7 @@ function NavbarNovaTemplate({
 
       break
     case 'dark':
-      backgrondMode = 'bg-black'
+      backgrondMode = 'bg-black border-primaryLight'
       textOpacity = 'text-corOutrosTextosBranca'
       hoverLinks = ' bg-gradient-to-r from-primaryLight to-primaryLight '
       colorMenu = 'text-primaryLight'
@@ -61,10 +61,10 @@ function NavbarNovaTemplate({
   return (
     <SectionWrapper>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
           isScrolled
             ? `${backgrondMode} backdrop-blur-md py-2 shadow-sm border-shadowHero/10 h-auto`
-            : 'bg-transparent border-border/40 py-3 phone2:h-auto'
+            : `${backgrondMode} border-border/40 py-3 phone2:h-auto`
         }`}
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
@@ -90,16 +90,11 @@ function NavbarNovaTemplate({
           <div className="hidden desktop1:flex items-center gap-8 text-sm font-secondFont font-medium">
             {labels.map((item, index) => (
               <Link
-                to={ids[index]}
+                to={`/${ids[index]}#${ids[index]}`}
+                // target="_blank"
+                // rel="noopener noreferrer"
                 aria-label={`Link para ${item}`}
-                smooth={true}
-                duration={500}
-                offset={-90}
-                spy={true}
-                hashSpy={true}
-                tag="a"
-                href={`#${ids[index]}`}
-                className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                className={`cursor-pointer ${hoverLinks} underline bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
               >
                 {item}
               </Link>
@@ -156,15 +151,10 @@ function NavbarNovaTemplate({
                 >
                   {labels.map((item, index) => (
                     <Link
-                      to={ids[index]}
+                      to={`${ids[index]}#${ids[index]}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={`Link para ${item}`}
-                      smooth={true}
-                      duration={500}
-                      offset={-90}
-                      spy={true}
-                      hashSpy={true}
-                      tag="a"
-                      href={`#${ids[index]}`}
                       className={`cursor-pointer transition-all w-full ${textOpacity}`}
                     >
                       {item}

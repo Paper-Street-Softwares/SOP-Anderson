@@ -205,7 +205,7 @@ function HeroTemplateNovo({
               className="relative order-1 lg:order-2"
             >
               <div
-                className={`relative rounded-[2.5rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
+                className={`relative rounded-[2.5rem] overflow-hidden aspect-[3/5] md:aspect-[4/6] shadow-2xl lg:aspect-[4/6] ring-1 ring-black/5 bg-gray-100 ${image}`}
               >
                 <img
                   src={content.texts.hero.heroDefaultImage}
