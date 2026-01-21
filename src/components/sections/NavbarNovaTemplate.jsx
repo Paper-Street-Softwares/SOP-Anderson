@@ -152,9 +152,9 @@ function NavbarNovaTemplate({
                 >
                   {labels.map((item, index) => (
                     <Link
-                      to={`${ids[index]}#${ids[index]}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      to={`/${ids[index]}#${ids[index]}`}
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                       aria-label={`Link para ${item}`}
                       className={`cursor-pointer transition-all w-full ${textOpacity}`}
                     >
