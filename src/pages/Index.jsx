@@ -47,11 +47,11 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
-            <FeaturesNovaTemplate colorMode={colorMode} />
+            {/* <FeaturesNovaTemplate colorMode={colorMode} /> */}
             {/* <FeaturesSemImage colorMode={colorMode} /> */}
-            <AboutNovoTemplate colorMode={colorMode} ButtonModal={false} />
-            <SocialMediaTemplate colorMode={colorMode} />
-            <CtaNovoTemplate colorMode={colorMode} />
+            {/* <AboutNovoTemplate colorMode={colorMode} ButtonModal={false} />
+              <SocialMediaTemplate colorMode={colorMode} /> */}
+            {/* <CtaNovoTemplate colorMode={colorMode} /> */}
             <StepsNovoTemplate colorMode={colorMode} />
             {/* <FaqNovoTemplate colorMode={colorMode} /> */}
             <FooterNovoTemplate

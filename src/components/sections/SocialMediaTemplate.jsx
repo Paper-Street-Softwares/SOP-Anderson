@@ -5,7 +5,7 @@ import content from '../../content/content'
 import { Instagram, ArrowRight } from 'lucide-react'
 import iconTikTok from '../../assets/imgs/icons/tiktok.png'
 
-function SocialMediaTemplate({ colorMode }) {
+function SocialMediaTemplate({ colorMode, className }) {
   let backgroundMode,
     text,
     textOpacity,
@@ -46,7 +46,10 @@ function SocialMediaTemplate({ colorMode }) {
   }
 
   return (
-    <SectionArea paddingtop={false} className={backgroundMode}>
+    <SectionArea
+      paddingtop={false}
+      className={`${backgroundMode} ${className}`}
+    >
       <SectionWrapper>
         <section>
           <div className="container mx-auto">
