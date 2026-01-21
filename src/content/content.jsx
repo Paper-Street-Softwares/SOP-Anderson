@@ -99,12 +99,12 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        'Perguntas',
+        'Fale Conosco',
         // 'Blog',
         // 'Perguntas',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq'],
+      menuId: ['', 'feature', 'about', 'cta'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
@@ -311,6 +311,16 @@ const content = {
           OAB em 2014 e concluir minha graduação em Direito no ano seguinte.
           Antes disso, atuei por cerca de sete anos em escritório de advocacia,
           onde construí uma base prática sólida.
+          <br />
+          Comecei como advogado autônomo, literalmente do zero, sem indicações e
+          sem estrutura. Sou o primeiro advogado da família e, ao longo desse
+          caminho, já participei de mais de mil audiências, atendendo desde
+          pessoas físicas até empresas.
+          <br />
+          Com formação em Direito Processual Civil e Direito do Trabalho, atendo
+          clientes de diferentes perfis, especialmente empresas e a classe
+          média, oferecendo uma advocacia acessível, estratégica e focada em
+          resultados reais.
         </div>
       ),
       buttonModalLabelAbout: 'Continuar lendo',

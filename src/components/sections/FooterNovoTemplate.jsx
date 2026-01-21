@@ -3,7 +3,7 @@ import { Dialog } from 'primereact/dialog'
 import { X, MapPin, Phone, Mail } from 'lucide-react'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import FooterSocialIcons from '../sectionElements/footer/FooterSocialIcons'
 import content from '../../content/content'
 
@@ -62,7 +62,7 @@ function FooterNovoTemplate({
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
-                  className="w-[90%]"
+                  className="w-[50%]"
                   width={187}
                   height={119}
                 />
@@ -107,13 +107,8 @@ function FooterNovoTemplate({
                     {labels.map((item, index) => (
                       <li key={item}>
                         <Link
-                          to={ids[index]}
+                          to={`/${ids[index]}#${ids[index]}`}
                           aria-label={`Link para ${item}`}
-                          smooth={true}
-                          duration={500}
-                          offset={-90}
-                          spy={true}
-                          hashSpy={true}
                           tag="a"
                           href={`#${ids[index]}`}
                           className="cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px]"
